@@ -18,19 +18,19 @@ public final class CalculateController {
         return welcomeService.welcome();
     }
     @GetMapping(path = "/plus")
-    public String countValues(@RequestParam int num1, @RequestParam int num2) {
-        return welcomeService.countValues(num1, num2);
+    public String plus(@RequestParam int num1, @RequestParam int num2) {
+        return welcomeService.plus(num1, num2);
     }
     @GetMapping(path = "/minus")
-    public String countValues1(@RequestParam int num1, @RequestParam int num2) {
-        return welcomeService.countValues1(num1, num2);
+    public String minus(@RequestParam int num1, @RequestParam int num2) {
+        return welcomeService.minus(num1, num2);
     }
     @GetMapping(path = "/multiply")
-    public String countValues2(@RequestParam int num1, @RequestParam int num2) {
-        return welcomeService.countValues2(num1, num2);
+    public String multiplication(@RequestParam int num1, @RequestParam int num2) {
+        return welcomeService.multiplication(num1, num2);
     }
     @GetMapping(path = "/divide")
-    public String countValues3(@RequestParam int num1, @RequestParam int num2) {
-        return welcomeService.countValues3(num1, num2);
+    public String division(@RequestParam int num1, @RequestParam int num2) {
+        return welcomeService.division(num1, num2);
     }
 }
